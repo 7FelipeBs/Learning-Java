@@ -1,0 +1,28 @@
+package Entities;
+
+public class AccountSavings extends Account {
+
+	public AccountSavings(String nameHolder, int numberCard, int keyValidation, double balanceAccount) {
+		super(nameHolder, numberCard, keyValidation, balanceAccount);
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		super.withdraw(amount);
+		balanceAccount -= 15 + amount;
+	}
+
+	@Override
+	public void deposit(double amount) {
+		super.deposit(amount);
+		balanceAccount += (amount * 0.05) + amount;
+	}
+
+	@Override
+	public String toString() {
+		return "AccountSavings [nameHolder=" + nameHolder + ", numberCard=" + numberCard + ", keyValidation="
+				+ keyValidation + ", balanceAccount=" + balanceAccount + "]";
+	}
+	
+	
+}

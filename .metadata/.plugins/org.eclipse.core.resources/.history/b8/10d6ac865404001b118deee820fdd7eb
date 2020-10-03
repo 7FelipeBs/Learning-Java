@@ -1,0 +1,21 @@
+package Entities;
+
+public class AccountSavings extends Account {
+
+	protected AccountSavings(String nameHolder, int numberCard, int keyValidation, double balanceAccount) {
+		super(nameHolder, numberCard, keyValidation, balanceAccount);
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		// TODO Auto-generated method stub
+		super.withdraw(amount);
+	}
+
+	@Override
+	public void deposit(double amount) {
+		// TODO Auto-generated method stub
+		super.deposit(amount);
+	}
+
+}

@@ -1,0 +1,9 @@
+package Entities;
+
+public class AccountBusiness extends Account {
+
+	public AccountBusiness() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

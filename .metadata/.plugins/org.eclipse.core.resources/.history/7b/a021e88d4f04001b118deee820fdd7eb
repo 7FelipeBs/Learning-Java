@@ -1,0 +1,14 @@
+package Entities;
+
+public class Account {
+
+	public String nameHolder;
+	protected int numberCard;
+	protected int keyValidation;
+	protected double balanceAccount; 
+	
+	public Account() {
+		
+	}
+
+}

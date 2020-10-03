@@ -1,0 +1,22 @@
+package Entities;
+
+public class AccountBusiness extends Account {
+	
+	private double loanLimitBusiness;
+	
+	public double getLoanLimitBusiness() {
+		return loanLimitBusiness;
+	}
+	public void setLoanLimitBusiness(double loanLimitBusiness) {
+		this.loanLimitBusiness = loanLimitBusiness;
+	}
+	protected AccountBusiness(String nameHolder, int numberCard, int keyValidation, double balanceAccount, double loanLimitBusiness) {
+		super(nameHolder, numberCard, keyValidation, balanceAccount);
+		this.loanLimitBusiness = loanLimitBusiness;
+	}
+	@Override
+	public final void  withdraw(double amount) {
+		super.withdraw(amount);
+		balanceAccount -= 50 + amount;
+	}
+}

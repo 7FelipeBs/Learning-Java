@@ -1,0 +1,9 @@
+package Entities;
+
+public class AccountSavings extends Account {
+
+	public AccountSavings() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

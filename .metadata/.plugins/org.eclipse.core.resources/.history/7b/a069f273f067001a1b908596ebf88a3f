@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+			
+		double A = 1, B = 2;
+		boolean teste;
+		
+			for(int i = 1; i <= 3; i++) { System.out.println("Id : " + i); }
+			
+		scanner.close();
+	}
+}
